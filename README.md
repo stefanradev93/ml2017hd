@@ -19,5 +19,6 @@ Will contain the code for our project in "Fundamentals of Machine Learning"
 |v4|Expanding on regression approach of v0. Data augmentation. No Dropout after feature extraction.|
 |v4.1|Uses clipped ReLU to get results between 0 and 5. Predictions tend to extremes. No Dropout after feature extraction.|
 |v4.2|Wider (512) first fc-layer, narrower (8) last fc-layer. Clipped ReLU. No Dropout after feature extraction.|
+|v5|Remodelled. Architecture of v3.2.1. Recommendation.|
 
 **Best model currently: v3.2.1.4**
