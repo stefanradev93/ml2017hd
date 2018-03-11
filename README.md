@@ -21,5 +21,8 @@ Will contain the code for our project in "Fundamentals of Machine Learning"
 |v4.2|Wider (512) first fc-layer, narrower (8) last fc-layer. Clipped ReLU. No Dropout after feature extraction.|
 |v5|Remodelled. Architecture of v3.2.1. Recommendation.|
 |v5.1|Weighted crossentropy loss.|
+|v6|Ordinal Regression.|
+|v6.1|Ordinal Regression + categorical_accuracy metric. Fail.|
+|v6.2|Ordinal Regression + squared_error loss. Fail.|
 
-**Best model currently: v3.2.1.4**
+**Best model currently: ~~v3.2.1.4~~ At this point it's not exactly clear anymore.**
