@@ -24,5 +24,6 @@ Will contain the code for our project in "Fundamentals of Machine Learning"
 |v6|Ordinal Regression.|
 |v6.1|Ordinal Regression + categorical_accuracy metric. Fail.|
 |v6.2|Ordinal Regression + squared_error loss. Fail.|
+|v6.3|Attempt at weighted binary_crossentropy.|
 
 **Best model currently: ~~v3.2.1.4~~ At this point it's not exactly clear anymore.**
