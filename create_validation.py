@@ -6,10 +6,10 @@ from shutil import copyfile
 import os
 import numpy as np
 
-img_path = './all_females'
-rating_path = '../ml2017hd/ratings_e.txt'
-save_path_val = './all_females_val_e'
-save_path_train = './all_females_train_e'
+img_path = '../project/all_females_combined'
+rating_path = './ratings_s_combined.txt'
+save_path_val = '../project/all_females_combined_val_s'
+save_path_train = '../project/all_females_combined_train_s'
 maxNum = 7
 minNum = 1
 
@@ -62,7 +62,7 @@ for r,sub in enumerate(selected_img):
         idx = orig_images.index(img)
         assert(orig_ratings[idx] == r)
         #move selected_img to separate folder & create corresponding val_ratings.txt
-        copyfile(img_path + "/" + img,save_path_val + "/" + img)
+        copyfile(img_path + "/" + img,save_path_val + "/" + str(r) + "_" + img) #copy rating into filename to ensure correct order
         text_file.write(str(r) + "\n")
 text_file.close()
 
@@ -74,6 +74,6 @@ for r,sub in enumerate(train_img):
         idx = orig_images.index(img)
         assert(orig_ratings[idx] == r)
         #move selected_img to separate folder & create corresponding train_ratings.txt
-        copyfile(img_path + "/" + img,save_path_train + "/" + img)
+        copyfile(img_path + "/" + img,save_path_train + "/"+ str(r) + "_" + img)
         text_file.write(str(r) + "\n")
 text_file.close()
