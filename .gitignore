@@ -3,3 +3,4 @@ weights/*
 models/*.h5
 test
 train
+./*
